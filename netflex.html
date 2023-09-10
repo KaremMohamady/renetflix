@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+  <html lang="ari en">
+   <head>          
+      <title> netflex </title>
+      <meta charset="UTF-8">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <meta name="description" content="netflex for HTML and CSS">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="karem elmohamady">
+      <lin khref="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+      <link rel="stylesheet" href="css/netfiex.css" />
+      <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    </head>
+  <header>
+    <div class="navbar">
+      <div class="navbar-container">
+          <div class="logo-container"><h1 class="logo">NETFLIX</h1></div>
+          <div class="menu-container">
+              <ul class="menu-list">
+                  <li class="menu-list-item active ">Home</li>
+                  <li class="menu-list-item">Movies</li>
+                  <li class="menu-list-item">Series</li>
+                  <li class="menu-list-item">Popular</li>
+                  <li class="menu-list-item">Trends</li>
+              </ul>
+          </div>
+          <div class="profile-container">
+              <img class="profile-picture" src="img/i.jpg" alt="">
+              <div class="profile-text-container">
+                  <span class="profile-text">Profile</span>
+                  <i class="fas fa-caret-down"></i>
+              </div>
+              <div class="toggle">
+                  <i class="fas fa-moon toggle-icon"></i>
+                  <i class="fas fa-sun toggle-icon"></i>
+                  <div class="toggle-ball"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="sidebar">
+      <i class="left-menu-icon fas fa-search"></i>
+      <i class="left-menu-icon fas fa-home"></i>
+      <i class="left-menu-icon fas fa-users"></i>
+      <i class="left-menu-icon fas fa-bookmark"></i>
+      <i class="left-menu-icon fas fa-tv"></i>
+      <i class="left-menu-icon fas fa-hourglass-start"></i>
+      <i class="left-menu-icon fas fa-shopping-cart"></i>
+  </div>
+     <!--   <a class="active" href="#"><i></i> الاكثر مشاهدة</a>
+      <div class="dropdown">
+          <a href="#"><i class="dropbtn"> افلام</i></a>
+        <div class="dropdown-content">
+          <a href="#"> عربي</a>
+          <a href="#">اكشن</a>
+          <a href="#">رعب</a>
+        </div>
+      </div>
+    <div class="dropdown">
+        <a href="#"><i class="dropbtn">مسلسلات </i></a>
+      <div class="dropdown-content">
+        <a href="#">رعب</a>
+        <a href="#">فنتازي</a>
+        <a href="#">اثاره وتشويق</a>
+      </div>
+    </div>
+    <div class="dropdown">
+        <a href="#"><i class="dropbtn">مسرحيات </i></a>
+      <div class="dropdown-content">
+        <a href="#">كوميدي</a>
+        <a href="#">دراما</a>
+        <a href="#">فنون </a>
+      </div>
+    </div>
+    -->
+  <a onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-fw fa-user"></i> log</a>
+
+    <div id="id01" class="modal">
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <img src="img/images (2).png" alt="Avatar" class="avatar">
+        <span1 onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+      </div>
+        
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label  style="color: white;">
+            <input  type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+          <div class="container" style="color:#e50914">
+            <span1 class="psw"><a style="color: white;" href="#">Forgatpassword?</a></span>
+          </div>
+    </form>
+  </div>
+  <!--
+      <div class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </div>-->
+</div>
+   </header> 
+   <body>
+     
+  <!--  <div class="slideshow-container">
+      <div class="mySlides">
+        <a target="_blank" href="image.png">
+              <img src="https://occ-0-6661-56.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZMgNnOzkX1naOUKbWmydkpv8u3SkEvcH6vs0CjxaFbo_GUShbX8VDL4XdXbo3kfvKi9FGwmI39z0XU73LJ2Ns8s5STK4dhrfBJX.jpg?r=469" alt="Cinque Terre" width="100%" height="400">
+            
+            </a>
+            <div class="desc">Justice League</div>
+      </div>
+    </div>
+    <div class="slideshow-container">
+    <div class="mySlides">
+      <div class="gallery">
+        <a target="_blank" href="image.png">
+          <img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTodgxU5-oPK2BgETQm7paT4gcJgDrIuCyViHwU5ebSZubiWhdCr0T1C8mQiBuXBavJ89AthuhrvY6lxQr7UE-PUQKOVCfbXVmV1Bq74KkxNWmyHEXeYjrYFES1vol3QC_3YPA.jpg?r=074" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">6UNDERGROUND</div>
+      </div>
+    </div>
+    <div class="mySlides">
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABS9XSVWKBiyoChzi3Uc0rIInNSWI9srrKmlcTfF29VaUudvHGxUBZkNtkWAoAXxORCJAEqUc3XmxgKM1TqOupfEltm4N7hVojOoz.jpg?r=82e" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">THE-EQUALIZER</div>
+      </div>
+    </div>
+    <div class="mySlides">
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXSy95DdYbfr8SW6as0_9mXGAGkxXqKmvprFd3NUNHydYz6Et4_eIPqWYj9b-B0aGqrsh3DMJ7sLnWU_2C0tt94kPGoJmn4GHYML.jpg?r=000" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">TAKERS</div>
+      </div>
+    </div>
+    <div class="mySlides">
+      <div class="gallery">
+          <a target="_blank" href="image.png">
+            <img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABS9XSVWKBiyoChzi3Uc0rIInNSWI9srrKmlcTfF29VaUudvHGxUBZkNtkWAoAXxORCJAEqUc3XmxgKM1TqOupfEltm4N7hVojOoz.jpg?r=82e" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">THE-EQUALIZER</div>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="gallery">
+          <a target="_blank" href="image.png">
+            <img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYr0UI4O0CQc9VaC0M88p63nizU5p94GpT1EofxE4fs_99FpuoelqQ_SzVUGnf774El9OkaMegk2at14k_fpomfC-TbMlWXWbsds.jpg?r=78c" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">WHITEHOUSEDOWN</div>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="gallery">
+          <a target="_blank" href="image.png">
+            <img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRMO5p-fMlxs3cpSXOIqNQhpUc59aSqtm3aNQDmwmvRnNZZo0dps_LbUFryupfegD6OR2_ZeS-KSEp45lUrgLz-JFojymglcruFT.jpg?r=7a8" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">BLACKNAT</div>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="gallery">
+          <a target="_blank" href="image.png">
+            <img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWy6ZuL7cExAfJ5rduCX3YQCKACfk8USCwb4UZjGR7Yt-WKt_1QZ8807nFGgQLgxuH1dB_ztvGL50iv1iwqi_hLnv0mcLKEZsvCB.jpg?r=12f" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">MILE22</div>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="gallery">
+          <a target="_blank" href="image.png">
+            <img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABad8xF7QTOof0NFoUWgob5j_iqmt-7xTiy_OIhP_OV1UmSENxu_bCNCjw1DrTuEKT_OiPfMGBAQO8bXmHts1roC2oyNGF6Np9O-3-nCX-u8mxEBIstfAfud0_A3AcrHf1sBRKw.jpg?r=f8a" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">THE-OLDGARED</div>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="gallery">
+          <a target="_blank" href="image.png">
+            <img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSx29ui0Os2jxlA24F8_Bg_rfexUMsPI1U79rb9jvlCryvdaFDLuvD0qThWR53OnEuWWXuoPlQV-UP3EZP-_e-fSo1VwSjPDd7vi.jpg?r=8e2" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">GRIDLOCKED</div>
+        </div>
+      </div>
+            
+  </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>-->
+    <div class="content-container">
+      <div class="featured-content">
+        <img class="featured-title" src="img/vig.png" alt="">
+        <p class="featured-desc">This gritty drama charts the exploits of Viking hero Ragnar Lothbrok
+           as he extends the Norse reach by challenging an unfit leader who lacks vision.</p>
+        <button class="featured-button">WATCH</button>
+      </div>
+    </div>
+      <style>
+         .shUp {
+      display: block;
+      animation-name: shUp;
+      animation-duration: 3s;
+      position: relative;
+      animation-fill-mode: forwards;
+      visibility: visible;
+
+    }
+    
+    @keyframes shUp {
+      0%   { left:0px; top:300px;}
+  100% { left:00px; color:  rgba(255, 5, 5, 0.877); top:50px;}
+}
+@media only screen and (max-width: 500px) {
+  .shUp {
+      display: block;
+      font-size: 25px;
+      margin-left: -150px;
+      animation-name: shUp;
+      animation-duration: 4s;
+      position: relative;
+      animation-fill-mode: forwards;
+      visibility: visible;
+  }
+    @keyframes shUp {
+      0%   { left:0px; top:100px;}
+  100% { left:00px; color:  rgba(255, 5, 5, 0.877); top:-10px;}
+}
+  }
+      </style>
+      
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      function myFunction() {
+        if (document.documentElement.scrollTop > 150) {
+          document.getElementById("sh").className = "shUp";
+      }
+      if (document.documentElement.scrollTop > 800) {
+          document.getElementById("so").className = "shUp";
+      }
+      if (document.documentElement.scrollTop > 1400) {
+          document.getElementById("sa").className = "shUp";
+      }
+      if (document.documentElement.scrollTop > 2000) {
+          document.getElementById("sk").className = "shUp";
+      }
+      if (document.documentElement.scrollTop > 2500) {
+          document.getElementById("h").className = "shUp";
+      }
+      
+    }
+      
+      </script>
+      <pre id="sh">
+                أحدث الأفلام العربية وأضخم الإنتاجات
+                قبل أو مباشرة بعد عرضها في السينما​
+</pre>
+  <div class="swiper mySwiper">
+    <h1>احدث الاضافات</h1>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/images10.jpg"></div>
+      <div class="swiper-slide"><img src="img/17.jpg"></div>
+      <div class="swiper-slide"><img src="img/19.jpg"> </div>
+      <div class="swiper-slide"><img src="img/f-2.jpg"></div>
+      <div class="swiper-slide"><img src="img/4.jpg"></div>
+      <div class="swiper-slide"><img src="img/5.jpg" ></div>
+      <div class="swiper-slide"><img src="img/8.jpg"></div>
+      <div class="swiper-slide"><img src="img/9.jpg"></div>
+      <div class="swiper-slide"><img src="img/images1.jpg"></div>
+      <div class="swiper-slide"><img src="img/images11.jpg"></div>
+      <div class="swiper-slide"><img src="img/16.jpg"></div>
+      <div class="swiper-slide"><img src="img/images12.jpg"></div>
+    
+
+    </div>
+     <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <pre id="so">
+              أحدث المسلسلات العربية وأضخم الإنتاجات
+              قبل أو مباشرة بعد عرضها في السينما​
+</pre>
+
+      <div class="swiper mySwiper">
+        <h1>مسلسلات</h1>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"> <a href="movis.html" ><img src="img/images0.jpg" width="100%" height="100%"></a> </div>
+          <div class="swiper-slide"><img src="img/img4.jpg"></div>
+          <div class="swiper-slide"><img src="img/img00.jpg"></div>
+          <div class="swiper-slide"><img src="img/img7.jpg"></div>
+          <div class="swiper-slide"><img src="img/img6.jpg"></div>
+          <div class="swiper-slide"><img src="img/img8.jpg"></div>
+          <div class="swiper-slide"><img src="img/img9.jpg"></div>
+          <div class="swiper-slide"><img src="img/img10.jpg"></div>
+          <div class="swiper-slide"><img src="img/img11.jpg"></div>
+          <div class="swiper-slide"><img src="img/img12.jpg"></div>
+          <div class="swiper-slide"><img src="img/img13.jpg"></div>
+          <div class="swiper-slide"><img src="img/img14.jpg"></div>
+    
+        </div>
+         <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="content-container">
+        <div class="featured-content1">
+            <img class="featured-title" src="img/f-t-2.png" alt="">
+            <p class="featured-desc">A missing child sets four families on a frantic hunt for
+               answers as they unearth a mind-bending mystery that spans three generations.</p>
+            <button class="featured-button">WATCH</button>
+        </div>
+      </div>
+      <pre id="sa">
+              أحدث افلام الانيمي العربية وأضخم الإنتاجات
+                 قبل أو مباشرة بعد عرضها في السينما​
+</pre>
+      <div class="swiper mySwiper">
+        <h1>افلام انيمي</h1>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/images10.jpg"></div>
+          <div class="swiper-slide"><img src="img/images11.jpg"></div>
+          <div class="swiper-slide"><img src="img/images12.jpg"></div>
+          <div class="swiper-slide"><img src="img/images2.jpg"></div>
+          <div class="swiper-slide"><img src="img/images3.jpg"></div>
+          <div class="swiper-slide"><img src="img/images4.jpg"></div>
+          <div class="swiper-slide"><img src="img/images5.jpg"></div>
+          <div class="swiper-slide"><img src="img/images6.jpg"></div>
+          <div class="swiper-slide"><img src="img/images7.jpg"></div>
+          <div class="swiper-slide"><img src="img/images12.jpg"> </div>
+          <div class="swiper-slide"><img src="img/images.jpg"></div>
+          <div class="swiper-slide"><img src="img/images1.jpg"></div>
+    
+        </div>
+         <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <pre id="sk">
+              أحدث افلام الكرتون العربية وأضخم الإنتاجات
+                قبل أو مباشرة بعد عرضها في السينما​
+</pre>
+
+<div class="swiper mySwiper">
+  <h1>افلام كرتون</h1>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="img/images10.jpg"></div>
+    <div class="swiper-slide"><img src="img/images11.jpg"></div>
+    <div class="swiper-slide"><img src="img/images12.jpg"></div>
+    <div class="swiper-slide"><img src="img/images2.jpg"></div>
+    <div class="swiper-slide"><img src="img/images3.jpg"></div>
+    <div class="swiper-slide"><img src="img/images4.jpg"></div>
+    <div class="swiper-slide"><img src="img/images5.jpg"></div>
+    <div class="swiper-slide"><img src="img/images6.jpg"></div>
+    <div class="swiper-slide"><img src="img/images7.jpg"></div>
+    <div class="swiper-slide"><img src="img/تنزيل.jpg"> </div>
+    <div class="swiper-slide"><img src="img/images.jpg"></div>
+    <div class="swiper-slide"><img src="img/images1.jpg"></div>
+
+  </div>
+   <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+<div class="content-container">
+  <div class="featured-content2">
+    <img class="featured-title" src="img/wi.png" alt="">
+    <p class="featured-desc">Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his
+       destiny in a turbulent world where people often prove more wicked than beasts.</p>
+    <button class="featured-button">WATCH</button>
+  </div>
+</div>
+
+  <!--
+<pre id="h">
+        عدد لا حصر له من الأفلام والعروض التلفزيونية، وغيرها.
+           تبدأ أسعار الخطط الآن من 70 ج.م.‎ شهريًا.
+                  هل أنت جاهزٌ للمشاهدة؟ 
+
+         
+</pre>
+  <button id="log" onclick="document.getElementById('id01').style.display='block'"> المشاهده الان</button>
+  -->
+  <footer>  
+  <div class="footer0">  
+    <h1>NETFLIX</h1>  
+  </div>  
+  <div class="footer2">  
+    <div class="product">  
+      <div class="heading">FAQ</div>  
+      <div class="div">Investor Relations</div>  
+      <div class="div">Speed Test</div>  
+      <div class="div">Investor Relations</div>  
+    </div>  
+    <div class="services">  
+      <div class="heading">Help Center</div>  
+      <div class="div">Jobs</div>  
+      <div class="div">Cookie Preferences</div>  
+      <div class="div">Legal Notices</div>  
+    </div>  
+    <div class="Company">  
+      <div class="heading">Account</div>  
+      <div class="div">Ways to Watch</div>  
+      <div class="div">Corporate Information</div>  
+      <div class="div">Only on Netflix</div>  
+    </div>  
+    <div class="GetHelp">  
+      <div class="heading">Help Center</div>  
+      <div class="div">Terms of Use</div>  
+      <div class="div">Contact Us</div>  
+      <div class="div">Login</div>  
+    </div>  
+  </div>  
+</footer>    
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+      <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+ var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    grabCursor: true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+  </div>  
+  <script src="/progkt/movie-website-master/app.js"></script>
+
+  </body>
+</html> 

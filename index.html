@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+  <html lang="ari en">
+   <head>          
+      <title> netflex </title>
+      <meta charset="UTF-8">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <meta name="description" content="netflex for HTML and CSS">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <meta name="author" content="karem elmohamady">
+          <link rel="stylesheet" href="css/np.css" />
+          <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+    </head>
+    <header>
+    <div class="navbar">
+    <h2>NETFLIX</h2>
+    <button id="button1" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-fw fa-user"></i> login</button>
+    
+        <div id="id01" class="modal">
+        <form class="modal-content animate" action="netflex.html" method="post">
+            <div class="imgcontainer">
+                <img src="img/images (2).png" alt="Avatar" class="avatar">
+                <span1 onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        
+            </div>
+            
+            <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+                
+            <button type="submit">Login</button>
+            <label  style="color: white;">
+                <input  type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            </div>
+        
+            <div class="container" style="color:#e50914">
+                <span1 class="psw"><a style="color: white;" href="#">Forgatpassword?</a></span>
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+</header>
+<body>
+    <div class="featured-content"
+        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/np.jpg');">
+        <div class="featured-desc">
+            <h1 id="h1">Unlimited movies, TV shows, and more</h1>
+            <h3 id="h3">Plans now start at EGP70/month.</h3>
+            <h4 id="h4">Ready to watch? Enter your email to create or restart your membership.</h4>
+            <input id="su"  type="text" placeholder="Email Address" name="uname" required>
+            <a href="netflex.html"><button type="submit" class="featured-button">Get Started</button></a>
+        </div>
+    </div>
+
+     
+
+    <div class="vid">
+        <video data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop="">
+            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4"></video>
+            <img id="tv" src="img/tv.png">
+     <div class="desc">
+        <h1>Enjoy on your TV</h1>
+        <p> Watch on Smart TVs, Playstation, Xbox,</p>
+        <p> Chromecast, Apple TV, Blu-ray players, and more.</p>
+
+     </div>
+    </div>
+     
+    <div class="img1">
+        <img id="img1" src="img/mobile.jpg">
+        <div class="desc1">
+            <h1>Download your shows</h1>
+            <h1> to watch offline</h1>
+            <p> Save your favorites easily and always </p>
+            <p> have something to watch.</p>
+        </div>
+    </div>
+     
+
+    <div class="vid1">
+        <video id="v"  data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop="">
+            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" type="video/mp4"></video>
+            <img id="tv1" src="img/device.png">
+     <div class="desc2">
+        <h1>Watch everywhere</h1>
+        <p> Stream unlimited movies and TV shows on</p>
+        <p> your phone, tablet, laptop, and TV.</p>
+     </div>
+    </div>
+     
+
+    <div class="img2">
+        <img id="img2" src="img/kids.png">
+        <div class="desc3">
+            <h1>Create profiles </h1>
+            <h1>for kids</h1>
+            <p> Send kids on adventures with their favorite </p>
+            <p>characters in a space made just for them— </p>
+            <p>free with your membership.</p>
+        </div>
+    </div>
+     
+
+ <footer>  
+    <div class="footer0">  
+        <h1>NETFLIX</h1>  
+    </div>  
+    <div class="footer2">  
+        <div class="product">  
+        <div class="heading">FAQ</div>  
+        <div class="div">Investor Relations</div>  
+        <div class="div">Speed Test</div>  
+        <div class="div">Investor Relations</div>  
+        </div>  
+        <div class="services">  
+        <div class="heading">Help Center</div>  
+        <div class="div">Jobs</div>  
+        <div class="div">Cookie Preferences</div>  
+        <div class="div">Legal Notices</div>  
+        </div>  
+        <div class="Company">  
+        <div class="heading">Account</div>  
+        <div class="div">Ways to Watch</div>  
+        <div class="div">Corporate Information</div>  
+        <div class="div">Only on Netflix</div>  
+        </div>  
+        <div class="GetHelp">  
+        <div class="heading">Help Center</div>  
+        <div class="div">Terms of Use</div>  
+        <div class="div">Contact Us</div>  
+        <div class="div">Login</div>  
+        </div>  
+    </div>  
+ </footer> 
+ 
+</body>
+</html>
